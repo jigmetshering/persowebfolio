@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A website by JT</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+            background-color: white;
+            color: blue;
+            line-height: 2;
         }
 
         header {
-            background-color: #3b82f6;
+            background-color: blue;
             color: white;
             padding: 15px 0;
             text-align: center;
@@ -79,7 +78,7 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s, color 0.3s;
+            transition: background-color 0.3s, opacity 0.3s;
         }
         .button.primary {
             background-color: #3b82f6;
@@ -92,9 +91,9 @@
             border: 2px solid #3b82f6;
         }
         .button:hover {
-            opacity: 0.9;
+            opacity: 0.8;
         }
-
+        
         .projects-grid {
             text-align: center;
             padding: 20px 0;
@@ -110,6 +109,7 @@
             display: inline-block;
             margin: 10px;
             vertical-align: top;
+            text-align: left;
         }
         .project-card h3 {
             color: #3b82f6;
@@ -141,7 +141,7 @@
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
-            background-color: #333;
+            background-color: blue;
             color: white;
             font-size: 0.9em;
         }
@@ -163,7 +163,9 @@
     </header>
 
     <div class="container">
+        
         <section id="home">
+            <img src="https://placehold.co/100x100/3B82F6/FFFFFF?text=JT" alt="Profile picture" class="profile-pic">
             <h1>I'm Jigme Tshering,</h1>
             <p>
                 A student currently studying at The Royal Academy in Paro, Bhutan.
@@ -178,7 +180,7 @@
                 I enjoy reading literature and exploring philosophy. I am a writer, and I create articles and essays on various topics, especially my beliefs on human nature and the system of life. I also focus on improving my self-expression by journaling using self-made prompts and writing letters to family and friends.
             </p>
             <p>
-                For recreation, I play combat and strategic computer/video games with amazing storylines, such as Red Dead Redemption 2 and Ghost of Tsushima. I believe that watching TV shows and movies that balance strong acting, compelling stories, and visuals helps to shape my imagination and storytelling ability. I also enjoy practicing and listening to music.
+                For recreation, I play combat and strategic video games with amazing storylines, such as Red Dead Redemption 2 and Ghost of Tsushima. I believe that watching TV shows and movies that balance strong acting, compelling stories, and visuals helps to shape my imagination and storytelling ability. I also enjoy practicing and listening to music.
             </p>
             <p>
                 Finally, my passion is performing. This includes acting, public speaking, and engaging in webcasts and podcasts. I believe that performing helps me control an audience and effectively express or share my thoughts and opinions, whether I am acting as a character in a play or speaking as myself in a broadcast.
@@ -191,10 +193,15 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <h3>Animus Intuitus</h3>
-                        <p>Animus Intuitus is a series of articles which I wrote. I made it myself! "Animus" is the latin word for mind, and "Intuitus" is the latin word for view; in a way, the name suggests the way I write my article: theories on the system of life and an insight of the mind.
+                    <p class="text-sm font-semibold text-gray-500 mb-3">
+                        Writing
                     </p>
+                    <p>Animus Intuitus is a series of articles which I wrote. I made it myself! "Animus" is the latin word for mind, and "Intuitus" is the latin word for view; in a way, the name suggests the way I write my article: theories on the system of life and an insight of the mind.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1yZoOZU-zCG4Vv8gBy0Upsa5-EV5JAtTU?usp=drive_link">Heres a link to the Google Drive with my work! &rarr;</a>
                 </div>
-            </div>
+            </div> 
+
         </section>
 
         <section id="skills">
@@ -212,11 +219,18 @@
             <h2>Get In Touch</h2>
 
             <p style="text-align: center; font-size: 1.1em; margin-bottom: 25px;">
-                I'm currently looking for internship opportunities and would love to connect! <br> You can email me at jigme.tshering2023@academy.bt </br>
+                I'm currently looking for opportunities which align with my passions, and I would love the plasure to connect!
             </p>
-
+            <div style="text-align: center;">
+                <a class="button primary">Email jigme.tshering2023@academy.bt</a>
+            </div>
+            
         </section>
     </div>
+
+    <footer>
+        <p> 2025 Jigme Tshering.</p>
+    </footer>
 
 </body>
 </html>
