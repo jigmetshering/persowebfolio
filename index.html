@@ -7,14 +7,14 @@
 
     <style>
         body {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
-            background-color: white;
-            color: blue;
-            line-height: 2;
+            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
         }
 
         header {
-            background-color: blue;
+            background-color: #1e293b;
             color: white;
             padding: 15px 0;
             text-align: center;
@@ -27,7 +27,7 @@
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #ccc;
+            color: #94a3b8;
         }
 
         .container {
@@ -38,60 +38,61 @@
 
         h2 {
             text-align: center;
-            color: #3b82f6;
+            color: #6366f1;
             margin-top: 40px;
             margin-bottom: 20px;
             padding-bottom: 5px;
-            border-bottom: 2px solid #3b82f6;
+            border-bottom: 2px solid #6366f1;
         }
 
         #home {
             text-align: center;
             padding: 60px 20px;
-            background-color: white;
+            background-color: #1e293b;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
             margin-bottom: 40px;
         }
         #home h1 {
-            color: #3b82f6;
+            color: #6366f1;
             font-size: 2.5em;
             margin-bottom: 10px;
         }
         #home p {
             font-size: 1.2em;
-            color: #666;
+            color: #a1a1aa;
             margin-bottom: 20px;
         }
         .profile-pic {
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            border: 4px solid #3b82f6;
+            border: 4px solid #6366f1;
             margin-bottom: 20px;
         }
 
         .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             margin: 5px;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s, opacity 0.3s;
+            font-weight: 600;
+            transition: background-color 0.3s, opacity 0.3s, transform 0.1s;
         }
         .button.primary {
-            background-color: #3b82f6;
-            color: white;
-            border: 2px solid #3b82f6;
+            background-color: #6366f1;
+            color: #0f172a;
+            border: 2px solid #6366f1;
         }
         .button.secondary {
-            background-color: white;
-            color: #3b82f6;
-            border: 2px solid #3b82f6;
+            background-color: #0f172a;
+            color: #6366f1;
+            border: 2px solid #6366f1;
         }
         .button:hover {
-            opacity: 0.8;
+            opacity: 0.9;
+            transform: translateY(-1px);
         }
         
         .projects-grid {
@@ -99,24 +100,24 @@
             padding: 20px 0;
         }
         .project-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
             padding: 20px;
             width: 90%;
             max-width: 280px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             display: inline-block;
-            margin: 10px;
+            margin: 15px;
             vertical-align: top;
             text-align: left;
         }
         .project-card h3 {
-            color: #3b82f6;
+            color: #6366f1;
             margin-top: 0;
         }
         .project-card a {
-            color: #3b82f6;
+            color: #6366f1;
             text-decoration: none;
             font-weight: bold;
         }
@@ -128,20 +129,20 @@
             margin: 0;
         }
         .skill-item {
-            background-color: #e5e5f5;
-            color: #3b82f6;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-weight: 500;
+            background-color: #334155;
+            color: #a5b4fc;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-weight: 600;
             display: inline-block;
-            margin: 5px;
+            margin: 6px;
         }
 
         footer {
             text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-            background-color: blue;
+            padding: 25px 0;
+            margin-top: 50px;
+            background-color: #1e293b;
             color: white;
             font-size: 0.9em;
         }
@@ -165,11 +166,13 @@
     <div class="container">
         
         <section id="home">
+            <!-- NOTE: The image source "jigme tshering.png" is a local file and may not display in a preview environment. -->
             <img src="jigme tshering.png" alt="Profile picture" class="profile-pic">
             <h1>I'm Jigme Tshering,</h1>
             <p>
                 A student currently studying at The Royal Academy in Paro, Bhutan.
             </p>
+        </section> <!-- Added missing closing tag for #home section -->
 
         <section id="about">
             <h2>About Me</h2>
@@ -180,7 +183,7 @@
                 I enjoy reading literature and exploring philosophy. I am a writer, and I create articles and essays on various topics, especially my beliefs on human nature and the system of life. I also focus on improving my self-expression by journaling using self-made prompts and writing letters to family and friends.
             </p>
             <p>
-                For recreation, I play combat and strategic video games with amazing storylines, such as Red Dead Redemption 2 and Ghost of Tsushima. I believe that watching TV shows and movies that balance strong acting, compelling stories, and visuals helps to shape my imagination and storytelling ability. I also enjoy practicing and listening to music.
+                For recreation, I play combat and strategic video games with amazing storylines, such as Red Dead Redemption 2 and Ghost of Tsushima. I believe that watching TV shows and movies that balance strong acting, compelling stories, and visuals helps to shape my imagination and storytelling ability.
             </p>
             <p>
                 Finally, my passion is performing. This includes acting, public speaking, and engaging in webcasts and podcasts. I believe that performing helps me control an audience and effectively express or share my thoughts and opinions, whether I am acting as a character in a play or speaking as myself in a broadcast.
